@@ -5,7 +5,8 @@
 int main(int argc, char** argv)
 {
 	//Open a directory
-	DIR *curdir = opendir(argv[1]);
+	//DIR *curdir = opendir(argv[1]);
+	DIR *curdir = opendir(".");
 	if(NULL == curdir)
 	{
 		closedir(curdir);
